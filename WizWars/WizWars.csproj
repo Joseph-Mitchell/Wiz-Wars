@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03E5E862-CC98-45A5-B3DB-6FEA88AD990D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WizWars</RootNamespace>
+    <AssemblyName>WizWars</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Code\BombClasses.cs" />
+    <Compile Include="Code\Game1.cs" />
+    <Compile Include="Code\Input.cs" />
+    <Compile Include="Code\MapData.cs" />
+    <Compile Include="Code\Menus.cs" />
+    <Compile Include="Code\Player.cs" />
+    <Compile Include="Code\Powerup.cs" />
+    <Compile Include="Code\BasicClasses.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Sounds\BlueExplosion.wav" />
+    <Content Include="Content\Sounds\CauldronBubble.wav" />
+    <Content Include="Content\Sounds\GreyExplosion.wav" />
+    <Content Include="Content\Sounds\OrangeExplosion.wav" />
+    <Content Include="Content\Sounds\PurpleExplosion.wav" />
+    <Content Include="Content\Textures\Bomb\Cauldron0.png" />
+    <Content Include="Content\Textures\Bomb\Cauldron1.png" />
+    <Content Include="Content\Textures\Bomb\Cauldron2.png" />
+    <Content Include="Content\Textures\Bomb\Cauldron3.png" />
+    <Content Include="Content\Textures\Bomb\Explosion0.png" />
+    <Content Include="Content\Textures\Bomb\Explosion1.png" />
+    <Content Include="Content\Textures\Bomb\Explosion2.png" />
+    <Content Include="Content\Textures\Bomb\Explosion3.png" />
+    <Content Include="Content\Textures\Other\Background.png" />
+    <Content Include="Content\Textures\Other\Pixel.png" />
+    <Content Include="Content\Textures\Players\Wizard0.png" />
+    <Content Include="Content\Textures\Players\Wizard1.png" />
+    <Content Include="Content\Textures\Players\Wizard2.png" />
+    <Content Include="Content\Textures\Players\Wizard3.png" />
+    <Content Include="Content\Textures\Powers\CauldronCapUp.png" />
+    <Content Include="Content\Textures\Powers\RangeUp.png" />
+    <Content Include="Content\Textures\Powers\SpeedUp.png" />
+    <Content Include="Content\Textures\Tiles\Blank.png" />
+    <Content Include="Content\Textures\Tiles\Block.png" />
+    <Content Include="Content\Textures\Tiles\Floor.png" />
+    <Content Include="Content\Textures\Tiles\Wall.png" />
+    <Content Include="Content\Textures\UI\GameOver\BackButton.png" />
+    <Content Include="Content\Textures\UI\GameOver\BlueWins.png" />
+    <Content Include="Content\Textures\UI\Countdown\1.png" />
+    <Content Include="Content\Textures\UI\Countdown\2.png" />
+    <Content Include="Content\Textures\UI\Countdown\3.png" />
+    <Content Include="Content\Textures\UI\GameOver\GreyWins.png" />
+    <Content Include="Content\Textures\UI\GameOver\NoOneWins.png" />
+    <Content Include="Content\Textures\UI\Instructions\InstructionPage.png" />
+    <Content Include="Content\Textures\UI\Menu\InstructionsButton.png" />
+    <Content Include="Content\Textures\UI\Menu\MenuControls.png" />
+    <Content Include="Content\Textures\UI\Menu\PlayButton.png" />
+    <Content Include="Content\Textures\UI\Menu\QuitButton.png" />
+    <Content Include="Content\Textures\UI\Menu\Title.png" />
+    <Content Include="Content\Textures\UI\GameOver\OrangeWins.png" />
+    <Content Include="Content\Textures\UI\PlayerChoose\2Players.png" />
+    <Content Include="Content\Textures\UI\PlayerChoose\3Players.png" />
+    <Content Include="Content\Textures\UI\PlayerChoose\4Players.png" />
+    <Content Include="Content\Textures\UI\PlayerChoose\PlayerChoosePage.png" />
+    <Content Include="Content\Textures\UI\GameOver\PurpleWins.png" />
+    <Content Include="Content\Textures\UI\PlayerStats\playerBar0.png" />
+    <Content Include="Content\Textures\UI\PlayerStats\playerBar1.png" />
+    <Content Include="Content\Textures\UI\PlayerStats\playerBar2.png" />
+    <Content Include="Content\Textures\UI\PlayerStats\playerBar3.png" />
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Content\Fonts\Arial07.spritefont" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

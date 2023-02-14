@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WizWars", "WizWars\WizWars.csproj", "{03E5E862-CC98-45A5-B3DB-6FEA88AD990D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03E5E862-CC98-45A5-B3DB-6FEA88AD990D}.Debug|x86.ActiveCfg = Debug|x86
+		{03E5E862-CC98-45A5-B3DB-6FEA88AD990D}.Debug|x86.Build.0 = Debug|x86
+		{03E5E862-CC98-45A5-B3DB-6FEA88AD990D}.Release|x86.ActiveCfg = Release|x86
+		{03E5E862-CC98-45A5-B3DB-6FEA88AD990D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CE82C84-53CD-485B-ACF4-69A94A62F41B}
+	EndGlobalSection
+EndGlobal
